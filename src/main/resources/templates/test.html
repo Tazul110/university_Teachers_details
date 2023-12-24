@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User_information</title>
+</head>
+<body>
+   <h2>This is AllUser Info Page</h2>
+   <table>
+    <tr th:each="p: ${teacher}">
+        <td th:text="${p.email}"></td>
+        <td th:text="${p.name}"></td>
+        <td th:text="${p.dept}"></td>
+    </tr>
+</table>
+   
+</body>
+</html>
